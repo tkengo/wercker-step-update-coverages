@@ -3,7 +3,7 @@ git clone -b gh-pages git@github.com:tkengo/hometype.git
 git config --global user.email "$GIT_EMAIL"
 git config --global user.name "$GIT_USERNAME"
 
-mv coverage hometype/.
+cp -R coverage hometype/coverage
 cd hometype
 
 diff=$(git status -s | grep coverage)
